@@ -14,16 +14,16 @@ void PrintNumbers(int number)
     {
         return;
     } 
-    if(number%2 == 0)
+    if(number%2 == 0)            
     {
     PrintNumbers(number - 2);
     Console.Write($"{number}; ");
     }
     else 
     {
-        number -= 1;
-        PrintNumbers(number - 2);
-        Console.Write($"{number}; ");
+    number -= 1;
+    PrintNumbers(number - 2);
+    Console.Write($"{number}; ");
     }
 }
 
